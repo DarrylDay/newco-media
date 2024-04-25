@@ -26,7 +26,7 @@ export default function VendorFormCell() {
 			</CardContent>
 			<CardContent>
 				<Label>Address</Label>
-				<Input type="tel" placeholder="San Francisco, CA, 94107" />
+				<Input type="text" placeholder="San Francisco, CA, 94107" />
 			</CardContent>
 			<CardContent>
 				<Label>Signed W-8 or W-9</Label>

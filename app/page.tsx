@@ -1,5 +1,10 @@
 "use client";
+import AdMediaPage from "@/components/AdMediaPage";
+import AdMediaTable from "@/components/AdMediaTable";
+import AddPodcastForm from "@/components/AddPodcastForm";
+import BankFormCell from "@/components/BankFormCell";
 import PersonalFormCell from "@/components/PersonalFormCell";
+import ReceivableFormCell from "@/components/ReceivableFormCell";
 import VendorFormCell from "@/components/VendorFormCell";
 import { Button } from "@/components/ui/button";
 import {
@@ -27,14 +32,15 @@ const pages = [
 	{
 		comps: (
 			<>
-				<PersonalFormCell />
+				<ReceivableFormCell />
+				<BankFormCell />
 			</>
 		),
 	},
 	{
 		comps: (
 			<>
-				<VendorFormCell />
+				<AdMediaPage />
 			</>
 		),
 	},
@@ -46,9 +52,9 @@ export default function Home() {
 	);
 
 	return (
-		<main className="flex flex-col items-center p-24 w-scren h-screen bg-blue-600">
+		<main className="flex flex-col items-center p-24 w-scren h-screen bg-muted">
 			<Card className="w-full max-w-[1200px] h-full flex flex-row relative">
-				<div className="absolute right-0 -top-8 text-white">
+				<div className="absolute right-0 -top-8">
 					<p>Powered by NewCo</p>
 				</div>
 				<div className="flex flex-col gap-2 min-w-[400px] p-8 border-r-2">
@@ -74,7 +80,7 @@ export default function Home() {
 						<p className="text-gray-300">Ad Media</p>
 					)}
 				</div>
-				<div className="flex-grow rounded-r-lg bg-slate-100">
+				<div className="flex-grow rounded-r-lg bg-muted/40">
 					<div className="flex flex-col h-full">
 						<ScrollArea className="h-full px-4">
 							<div className="flex flex-col mt-4 space-y-8 p-4">
@@ -89,7 +95,7 @@ export default function Home() {
 							<ScrollBar orientation="vertical" />
 						</ScrollArea>
 						<div
-							className="min-h-[80px] bg-white border-t-2 flex items-center justify-end px-4"
+							className="min-h-[80px] bg-white border-t-2 rounded-br-lg flex items-center justify-end px-4"
 							onClick={() => {
 								if (section == "business") setSection("bank");
 								else if (section == "bank") setSection("ad");
