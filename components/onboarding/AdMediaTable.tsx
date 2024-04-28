@@ -1,5 +1,5 @@
 import { Input } from "@/components/ui/input";
-import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 import { Label } from "@/components/ui/label";
 import {
 	Table,
@@ -10,8 +10,8 @@ import {
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
-import { AddMedia } from "@/components/AddMedia";
-import { Button } from "./ui/button";
+import { AddMedia } from "@/components/onboarding/AddMedia";
+import { Button } from "../ui/button";
 
 export default function AdMediaTable({
 	setAddMedia,

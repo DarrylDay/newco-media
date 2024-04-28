@@ -1,7 +1,7 @@
 import { Input } from "@/components/ui/input";
-import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 import { Label } from "@/components/ui/label";
-import { Combobox } from "./Combobox";
+import { Combobox } from "../Combobox";
 
 const options = [
 	{

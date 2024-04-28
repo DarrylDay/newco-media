@@ -1,11 +1,11 @@
 "use client";
-import AdMediaPage from "@/components/AdMediaPage";
-import AdMediaTable from "@/components/AdMediaTable";
-import AddPodcastForm from "@/components/AddPodcastForm";
-import BankFormCell from "@/components/BankFormCell";
-import PersonalFormCell from "@/components/PersonalFormCell";
-import ReceivableFormCell from "@/components/ReceivableFormCell";
-import VendorFormCell from "@/components/VendorFormCell";
+import AdMediaPage from "@/components/onboarding/AdMediaPage";
+import AdMediaTable from "@/components/onboarding/AdMediaTable";
+import AddPodcastForm from "@/components/onboarding/AddPodcastForm";
+import BankFormCell from "@/components/onboarding/BankFormCell";
+import PersonalFormCell from "@/components/onboarding/PersonalFormCell";
+import ReceivableFormCell from "@/components/onboarding/ReceivableFormCell";
+import VendorFormCell from "@/components/onboarding/VendorFormCell";
 import { Button } from "@/components/ui/button";
 import {
 	Card,
