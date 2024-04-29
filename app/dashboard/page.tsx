@@ -1,14 +1,31 @@
+"use client";
+import AlertsCard from "@/components/dashboard/AlertsCard";
+import BudgetCard from "@/components/dashboard/BudgetCard";
 import OverviewCard from "@/components/dashboard/OverviewCard";
 import { CardTitle } from "@/components/ui/card";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Page() {
 	return (
 		<main>
-			<CardTitle className="px-6 pt-6 pb-2">Dashboard</CardTitle>
-			<div className="flex flex-row p-6 space-x-8">
+			<div className="px-6 pt-6 pb-2 flex flex-row">
+				<CardTitle>Dashboard</CardTitle>
+				<div className="grow"></div>
+				<Tabs defaultValue="1M" className="">
+					<TabsList>
+						<TabsTrigger value="1M">1M</TabsTrigger>
+						<TabsTrigger value="3M">3M</TabsTrigger>
+						<TabsTrigger value="6M">6M</TabsTrigger>
+						<TabsTrigger value="1Y">1Y</TabsTrigger>
+						<TabsTrigger value="ALL">ALL</TabsTrigger>
+					</TabsList>
+				</Tabs>
+			</div>
+
+			<div className="flex flex-row p-6 space-x-8 h-[250px]">
 				<OverviewCard />
-				<OverviewCard />
-				<OverviewCard />
+				<BudgetCard />
+				<AlertsCard />
 			</div>
 		</main>
 	);
