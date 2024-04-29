@@ -42,3 +42,12 @@ export type Vendor = {
 	bankInfo: BankInfo;
 	adMedia: AdMedia;
 };
+
+export type Campaign = {
+	name: string;
+	type: string;
+	date: string;
+	views: number;
+	cpm: number;
+	netCost: number;
+};

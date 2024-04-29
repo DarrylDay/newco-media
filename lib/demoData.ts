@@ -1,4 +1,4 @@
-import { Vendor } from "./types";
+import { Campaign, Vendor } from "./types";
 
 export const vendors: Vendor[] = [
 	{
@@ -31,5 +31,40 @@ export const vendors: Vendor[] = [
 				},
 			],
 		},
+	},
+];
+
+export const campaigns: Campaign[] = [
+	{
+		name: "High Snob Society",
+		type: "Display",
+		date: "Jan 20, 2024",
+		views: 17,
+		cpm: 20.1,
+		netCost: 53.2,
+	},
+	{
+		name: "Not Boring",
+		type: "Newsletter",
+		date: "Jan 20, 2024",
+		views: 4,
+		cpm: 49.5,
+		netCost: 53.2,
+	},
+	{
+		name: "Anna She",
+		type: "Creator",
+		date: "Jan 20, 2024",
+		views: 81,
+		cpm: 7.1,
+		netCost: 133.2,
+	},
+	{
+		name: "20VC",
+		type: "Podcast",
+		date: "Jan 20, 2024",
+		views: 24,
+		cpm: 37.1,
+		netCost: 200.0,
 	},
 ];

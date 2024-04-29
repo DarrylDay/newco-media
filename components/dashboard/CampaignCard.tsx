@@ -13,10 +13,10 @@ export default function CampaignCard({
 }) {
 	return (
 		<Card>
-			<div className="flex flex-row p-4 gap-3 items-center">
+			<div className="flex flex-row p-3 gap-3 items-center">
 				<Badge key={title} style={{ backgroundColor: color }}></Badge>
-				<div className="text-xl">{title}</div>
-				<div className="text-2xl font-bold">{number}</div>
+				<div className="text-lg">{title}</div>
+				<div className="text-xl font-bold">{number}</div>
 			</div>
 		</Card>
 	);

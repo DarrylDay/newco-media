@@ -7,7 +7,7 @@ export default function CampaignResults() {
 	return (
 		<div className="min-w-[400px] h-[350px] flex flex-col space-y-4 grow">
 			<div className="flex flex-row items-center">
-				<div className="text-2xl">Results by campaign</div>
+				<div className="text-xl">Results by campaign</div>
 				<div className="grow"></div>
 				<div className="flex flex-row">
 					<ChevronLeft />
