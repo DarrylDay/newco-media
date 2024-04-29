@@ -1,6 +1,7 @@
 "use client";
 import AlertsCard from "@/components/dashboard/AlertsCard";
 import BudgetCard from "@/components/dashboard/BudgetCard";
+import CampaignResults from "@/components/dashboard/CampaignResults";
 import OverviewCard from "@/components/dashboard/OverviewCard";
 import { CardTitle } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -8,7 +9,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function Page() {
 	return (
 		<main>
-			<div className="px-6 pt-6 pb-2 flex flex-row">
+			<div className="px-6 pt-6 flex flex-row">
 				<CardTitle>Dashboard</CardTitle>
 				<div className="grow"></div>
 				<Tabs defaultValue="1M" className="">
@@ -22,10 +23,11 @@ export default function Page() {
 				</Tabs>
 			</div>
 
-			<div className="flex flex-row p-6 space-x-8 h-[250px]">
+			<div className="flex flex-row p-6 gap-8 flex-wrap">
 				<OverviewCard />
-				<BudgetCard />
 				<AlertsCard />
+				<BudgetCard />
+				<CampaignResults />
 			</div>
 		</main>
 	);

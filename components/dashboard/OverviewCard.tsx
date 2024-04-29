@@ -12,7 +12,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function OverviewCard() {
 	return (
-		<Card className="min-w-[400px] basis-1 grow h-full flex flex-col">
+		<Card className="min-w-[400px] h-[200px] basis-1 grow flex flex-col">
 			<CardHeader className="pb-2 flex flex-row space-y-0">
 				<CardTitle className="text-lg">Overview</CardTitle>
 				<div className="grow"></div>
@@ -28,8 +28,8 @@ export default function OverviewCard() {
 			<CardContent className="grow flex flex-col justify-center">
 				<Progress
 					className="my-2"
-					value={75}
-					aria-label="57% increase"
+					value={33}
+					aria-label="33% increase"
 				/>
 			</CardContent>
 			<CardFooter>

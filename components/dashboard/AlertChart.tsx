@@ -13,15 +13,15 @@ const COLORS = ["#E5484D", "#FFBB28", "#00C49F"];
 export default class AlertChart extends PureComponent {
 	render() {
 		return (
-			<PieChart width={300} height={120}>
+			<PieChart width={200} height={120}>
 				<Pie
 					data={data}
-					cx={150}
+					cx={95}
 					cy={100}
 					startAngle={180}
 					endAngle={0}
-					innerRadius={80}
-					outerRadius={100}
+					innerRadius={70}
+					outerRadius={90}
 					fill="#8884d8"
 					paddingAngle={5}
 					dataKey="value"
