@@ -2,15 +2,14 @@
 import Link from "next/link";
 import {
 	Bell,
-	CircleUser,
 	Home,
-	LineChart,
-	Menu,
-	Package,
 	Package2,
-	Search,
-	ShoppingCart,
 	Users,
+	MicVocal,
+	Cog,
+	LogOut,
+	LifeBuoy,
+	ChevronDown,
 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -26,6 +25,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
+import { Separator } from "@/components/ui/separator";
 
 export default function DashboardLayout({
 	children,
@@ -80,22 +80,98 @@ export default function DashboardLayout({
 								Vendors
 							</Link>
 							<Link
-								href="/dashboard/campaign"
+								href="/dashboard/media"
 								className={`flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary ${
-									pathname == "/dashboard/campaign"
+									pathname == "/dashboard/media"
 										? "bg-muted"
 										: ""
 								}`}
 							>
-								<LineChart className="h-4 w-4" />
-								Campaign Management
+								<MicVocal className="h-4 w-4" />
+								Media
+							</Link>
+						</nav>
+					</div>
+					<div className="flex">
+						<nav className="grid items-start px-2 text-sm font-medium lg:px-4 w-full my-4">
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg px-3 py-2 font-black text-muted-foreground transition-all hover:text-primary ${
+									pathname == "/dashboard/test"
+										? "bg-muted"
+										: ""
+								}`}
+							>
+								<Cog className="h-4 w-4" />
+								Settings
+								<div className="grow"></div>
+								<ChevronDown className="h-4" />
+							</Link>
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg pl-10 py-2 text-muted-foreground transition-all hover:text-primary`}
+							>
+								Workspace
+							</Link>
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg pl-10 py-2 text-muted-foreground transition-all hover:text-primary`}
+							>
+								Profile
+							</Link>
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg pl-10 py-2 text-muted-foreground transition-all hover:text-primary`}
+							>
+								Members
+							</Link>
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg pl-10 py-2 text-muted-foreground transition-all hover:text-primary`}
+							>
+								Notifications
+							</Link>
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg pl-10 py-2 text-muted-foreground transition-all hover:text-primary`}
+							>
+								Billing
+							</Link>
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg pl-10 py-2 text-muted-foreground transition-all hover:text-primary`}
+							>
+								Invoices
+							</Link>
+							<Separator className="my-4" />
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary ${
+									pathname == "/dashboard/test"
+										? "bg-muted"
+										: ""
+								}`}
+							>
+								<LogOut className="h-4 w-4" />
+								Sign out
+							</Link>
+							<Link
+								href="/dashboard"
+								className={`flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary ${
+									pathname == "/dashboard/test"
+										? "bg-muted"
+										: ""
+								}`}
+							>
+								<LifeBuoy className="h-4 w-4" />
+								Support
 							</Link>
 						</nav>
 					</div>
 				</div>
 			</div>
 			<div className="flex flex-col">
-				<header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
+				{/* <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
 					<div className="w-full flex-1">
 						<form>
 							<div className="relative">
@@ -130,7 +206,7 @@ export default function DashboardLayout({
 							<DropdownMenuItem>Logout</DropdownMenuItem>
 						</DropdownMenuContent>
 					</DropdownMenu>
-				</header>
+				</header> */}
 				{children}
 			</div>
 		</div>

@@ -13,7 +13,7 @@ import { MoreHorizontal } from "lucide-react";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Dialog } from "@/components/ui/dialog";
-import VendorsDialog from "./VendorsDialog";
+import VendorsDialog from "./dialog/VendorsDialog";
 import { Vendor } from "@/lib/types";
 
 export default function VendorsTableRow({ vendor }: { vendor: Vendor }) {
@@ -21,7 +21,7 @@ export default function VendorsTableRow({ vendor }: { vendor: Vendor }) {
 
 	return (
 		<Dialog open={open} onOpenChange={setOpen}>
-			<TableRow onClick={() => setOpen(true)}>
+			<TableRow key={vendor.name} onClick={() => setOpen(true)}>
 				<TableCell className="hidden sm:table-cell">
 					<Image
 						alt="Logo image"
@@ -34,7 +34,7 @@ export default function VendorsTableRow({ vendor }: { vendor: Vendor }) {
 				<TableCell className="font-medium">{vendor.name}</TableCell>
 				<TableCell>
 					{vendor.mediaTypes.map((x) => (
-						<Badge className="mr-2" variant="outline">
+						<Badge key={x} className="mr-2" variant="outline">
 							{x}
 						</Badge>
 					))}

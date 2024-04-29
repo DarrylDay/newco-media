@@ -32,7 +32,7 @@ export default function VendorsTable() {
 			</TableHeader>
 			<TableBody>
 				{vendors.map((x) => (
-					<VendorsTableRow vendor={x} />
+					<VendorsTableRow key={x.name} vendor={x} />
 				))}
 			</TableBody>
 		</Table>
