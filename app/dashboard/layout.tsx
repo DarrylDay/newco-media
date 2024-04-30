@@ -11,21 +11,10 @@ import {
 	LifeBuoy,
 	ChevronDown,
 } from "lucide-react";
-
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuLabel,
-	DropdownMenuSeparator,
-	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 export default function DashboardLayout({
 	children,
@@ -170,8 +159,11 @@ export default function DashboardLayout({
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-row w-full justify-center">
-				<div className="max-w-[1500px]">{children}</div>
+			<div className="flex flex-row w-full h-screen justify-center">
+				<ScrollArea className="w-full max-w-[1500px]">
+					{children}
+					<ScrollBar orientation="vertical" />
+				</ScrollArea>
 			</div>
 		</div>
 	);

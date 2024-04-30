@@ -40,7 +40,6 @@ export type Vendor = {
 	address: string;
 	contact: Contact;
 	bankInfo: BankInfo;
-	adMedia: AdMedia;
 };
 
 export type Campaign = {
