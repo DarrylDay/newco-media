@@ -47,7 +47,7 @@ export type Campaign = {
 	name: string;
 	type: string;
 	date: string;
-	views: number;
+	leads: number;
 	cpm: number;
 	netCost: number;
 };

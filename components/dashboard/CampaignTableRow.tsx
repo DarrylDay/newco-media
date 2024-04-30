@@ -13,13 +13,13 @@ export default function CampaignTableRow({ campaign }: { campaign: Campaign }) {
 				{campaign.date}
 			</TableCell>
 			<TableCell className="hidden md:table-cell">
-				{campaign.views}
+				{campaign.leads}
 			</TableCell>
 			<TableCell className="hidden md:table-cell">
-				{campaign.cpm}
+				${campaign.cpm}
 			</TableCell>
 			<TableCell className="hidden md:table-cell">
-				{campaign.netCost}
+				${campaign.netCost}
 			</TableCell>
 		</TableRow>
 	);

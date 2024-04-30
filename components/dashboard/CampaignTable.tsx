@@ -26,7 +26,7 @@ export default function CampaignTable() {
 							DATE
 						</TableHead>
 						<TableHead className="hidden md:table-cell">
-							VIEWS
+							LEADS
 						</TableHead>
 						<TableHead className="hidden md:table-cell">
 							CPM

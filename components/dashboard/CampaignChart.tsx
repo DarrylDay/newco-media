@@ -1,4 +1,5 @@
 "use client";
+import { campaignChartData } from "@/lib/demoData";
 import React, { PureComponent } from "react";
 import {
 	AreaChart,
@@ -10,58 +11,6 @@ import {
 	ResponsiveContainer,
 } from "recharts";
 
-const data = [
-	{
-		day: 1,
-		display: 0,
-		newsletter: 0,
-		creator: 0,
-		podcast: 0,
-	},
-	{
-		day: 2,
-		display: 3,
-		newsletter: 1,
-		creator: 0,
-		podcast: 4,
-	},
-	{
-		day: 3,
-		display: 8,
-		newsletter: 2,
-		creator: 20,
-		podcast: 6,
-	},
-	{
-		day: 4,
-		display: 10,
-		newsletter: 2,
-		creator: 42,
-		podcast: 15,
-	},
-	{
-		day: 5,
-		display: 13,
-		newsletter: 3,
-		creator: 67,
-		podcast: 19,
-	},
-	{
-		day: 6,
-		display: 13,
-		newsletter: 3,
-		creator: 71,
-		podcast: 21,
-	},
-	{
-		day: 7,
-		display: 17,
-		newsletter: 4,
-		creator: 81,
-		podcast: 24,
-	},
-];
-
 export default class CampaignChart extends PureComponent {
 	render() {
 		return (
@@ -69,7 +18,7 @@ export default class CampaignChart extends PureComponent {
 				<AreaChart
 					// width={500}
 					// height={400}
-					data={data}
+					data={campaignChartData}
 					margin={{
 						top: 10,
 						right: 20,
@@ -81,11 +30,7 @@ export default class CampaignChart extends PureComponent {
 					<CartesianGrid strokeDasharray="3 3" />
 					<XAxis
 						dataKey={"day"}
-						ticks={[
-							1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
-							16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28,
-							29, 30, 31,
-						]}
+						ticks={[1, 31]}
 						domain={[1, 31]}
 						allowDataOverflow
 						type="number"
@@ -93,12 +38,10 @@ export default class CampaignChart extends PureComponent {
 						minTickGap={0}
 						includeHidden
 						tickFormatter={(x) => `Jan ${x}`}
-						angle={45}
-						tickMargin={2}
-						textAnchor="start"
+						tickMargin={4}
 					/>
 					<YAxis width={40} />
-					<Tooltip />
+					<Tooltip labelFormatter={(x) => `Jan ${x}`} />
 					<Area
 						type="linear"
 						dataKey="creator"

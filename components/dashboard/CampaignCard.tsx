@@ -16,7 +16,7 @@ export default function CampaignCard({
 			<div className="flex flex-row p-3 gap-3 items-center">
 				<Badge key={title} style={{ backgroundColor: color }}></Badge>
 				<div className="text-lg">{title}</div>
-				<div className="text-xl font-bold">{number}</div>
+				<div className="text-xl">{number}</div>
 			</div>
 		</Card>
 	);

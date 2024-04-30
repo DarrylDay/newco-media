@@ -29,6 +29,7 @@ export default function VendorsSheet({ vendor }: { vendor: Vendor }) {
 			</SheetHeader>
 			<SheetDescription>
 				<div className="flex flex-col space-y-4 mt-4">
+					<Button>View Media Roster</Button>
 					<div className="font-bold text-xl">Info</div>
 					<TextDisplay
 						title="Website"
@@ -51,7 +52,6 @@ export default function VendorsSheet({ vendor }: { vendor: Vendor }) {
 						title="Company Address"
 						value={vendor.address}
 					/>
-					<Button>View Media Roster</Button>
 					<Separator />
 					<div className="font-bold text-xl">Contact</div>
 					<TextDisplay title="Name" value={vendor.contact.name} />
