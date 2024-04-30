@@ -12,7 +12,7 @@ export default function Page() {
 	return (
 		<main>
 			<ScrollArea className="w-full h-screen">
-				<div className="px-6 pt-6 flex flex-row">
+				<div className="px-6 pt-6 flex flex-row items-center">
 					<CardTitle>Dashboard</CardTitle>
 					<div className="grow"></div>
 					<Tabs defaultValue="1M" className="">

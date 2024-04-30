@@ -12,15 +12,15 @@ import { TableCell, TableRow } from "@/components/ui/table";
 import { MoreHorizontal } from "lucide-react";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Dialog } from "@/components/ui/dialog";
-import VendorsDialog from "./dialog/VendorsDialog";
 import { Vendor } from "@/lib/types";
+import { Sheet } from "@/components/ui/sheet";
+import VendorsSheet from "./sheet/VendorsSheet";
 
 export default function VendorsTableRow({ vendor }: { vendor: Vendor }) {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<Dialog open={open} onOpenChange={setOpen}>
+		<Sheet open={open} onOpenChange={setOpen}>
 			<TableRow key={vendor.name} onClick={() => setOpen(true)}>
 				<TableCell className="hidden sm:table-cell">
 					<Image
@@ -65,7 +65,7 @@ export default function VendorsTableRow({ vendor }: { vendor: Vendor }) {
 					</DropdownMenu>
 				</TableCell>
 			</TableRow>
-			<VendorsDialog vendor={vendor} />
-		</Dialog>
+			<VendorsSheet vendor={vendor} />
+		</Sheet>
 	);
 }

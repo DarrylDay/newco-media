@@ -22,9 +22,11 @@ import {
 export function Combobox({
 	options,
 	defaultValue,
+	useSearch,
 }: {
 	options: { value: string; label: string }[];
 	defaultValue?: string;
+	useSearch?: boolean;
 }) {
 	const [open, setOpen] = React.useState(false);
 	const [value, setValue] = React.useState(defaultValue);
@@ -47,7 +49,11 @@ export function Combobox({
 			</PopoverTrigger>
 			<PopoverContent className="w-[200px] p-0">
 				<Command>
-					{/* <CommandInput placeholder="Search framework..." /> */}
+					{useSearch ? (
+						<CommandInput placeholder="Search..." />
+					) : (
+						<></>
+					)}
 					<CommandList>
 						<CommandEmpty>No options found.</CommandEmpty>
 						<CommandGroup>
