@@ -13,12 +13,12 @@ import BudgetChart from "./BudgetChart";
 
 export default function BudgetCard() {
 	return (
-		<Card className="min-w-[500px] max-w-[600px] h-[200px] basis-1 grow flex flex-col">
+		<Card className="min-w-[400px] max-w-[600px] h-[200px] basis-1 grow flex flex-col">
 			<CardHeader className="pb-0">
 				<CardTitle className="text-lg">Budget</CardTitle>
 			</CardHeader>
 			<CardContent className="grow">
-				<div className="flex flex-row grow h-full">
+				<div className="flex flex-row grow h-full gap-2">
 					<div className="flex flex-col grow basis-1 justify-center content-center">
 						<div className="grow flex flex-col justify-center">
 							<div>

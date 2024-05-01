@@ -25,7 +25,7 @@ export default function OverviewCard() {
 	}, 0);
 
 	return (
-		<Card className="min-w-[400px] max-w-[600px] h-[200px] basis-1 grow flex flex-col">
+		<Card className="min-w-[350px] max-w-[600px] h-[200px] basis-1 grow flex flex-col">
 			<CardHeader className="pb-2 flex flex-row space-y-0">
 				<CardTitle className="text-lg">Overview</CardTitle>
 				<div className="grow"></div>
@@ -46,7 +46,7 @@ export default function OverviewCard() {
 				/>
 			</CardContent>
 			<CardFooter>
-				<div className="flex flex-row grow">
+				<div className="flex flex-row grow gap-4">
 					<div className="grow basis-1">
 						<div className="text-2xl">${netSpend.toFixed(2)}</div>
 						<div className="text-xs text-muted-foreground">
