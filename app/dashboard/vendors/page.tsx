@@ -21,9 +21,6 @@ export default function Page() {
 				</div>
 				<AddVendorDialog />
 			</div>
-			{/* <CardDescription className="px-6">
-				Manage your vendors and view their information.
-			</CardDescription> */}
 			<div className="p-6">
 				<VendorsTable />
 			</div>
