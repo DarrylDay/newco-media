@@ -25,7 +25,7 @@ export default function OverviewCard() {
 	}, 0);
 
 	return (
-		<Card className="min-w-[350px] max-w-[600px] h-[200px] basis-1 grow flex flex-col">
+		<Card className="min-w-[375px] max-w-[600px] h-[200px] basis-1 grow flex flex-col">
 			<CardHeader className="pb-2 flex flex-row space-y-0">
 				<CardTitle className="text-lg">Overview</CardTitle>
 				<div className="grow"></div>
