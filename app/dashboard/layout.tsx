@@ -159,12 +159,7 @@ export default function DashboardLayout({
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-row w-full h-screen justify-center">
-				<ScrollArea className="w-full max-w-[1500px]">
-					{children}
-					<ScrollBar orientation="vertical" />
-				</ScrollArea>
-			</div>
+			<>{children}</>
 		</div>
 	);
 }
