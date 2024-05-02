@@ -9,6 +9,56 @@ import { labels, priorities, statuses } from "./data/data";
 import { Task } from "./data/schema";
 import { DataTableColumnHeader } from "./data-table-column-header";
 import { DataTableRowActions } from "./data-table-row-actions";
+import { PodcastInfo } from "@/lib/types";
+
+export const columns2: ColumnDef<PodcastInfo>[] = [
+	{
+		accessorKey: "name",
+		header: ({ column }) => (
+			<DataTableColumnHeader column={column} title="Show Name" />
+		),
+		cell: ({ row }) => (
+			<div className="font-medium">{row.getValue("name")}</div>
+		),
+		enableSorting: false,
+		enableHiding: false,
+	},
+	{
+		accessorKey: "publisher",
+		header: ({ column }) => (
+			<DataTableColumnHeader column={column} title="Publisher" />
+		),
+		cell: ({ row }) => <div className="">{row.getValue("publisher")}</div>,
+		enableSorting: true,
+		enableHiding: true,
+	},
+	{
+		accessorKey: "category",
+		header: ({ column }) => (
+			<DataTableColumnHeader column={column} title="Category" />
+		),
+		cell: ({ row }) => <div className="">{row.getValue("category")}</div>,
+		enableSorting: true,
+		enableHiding: true,
+		filterFn: (row, id, value) => {
+			return value.includes(row.getValue(id));
+		},
+	},
+	{
+		accessorKey: "episodeCount",
+		header: ({ column }) => (
+			<DataTableColumnHeader column={column} title="Episode Count" />
+		),
+		cell: ({ row }) => (
+			<div className="">{row.getValue("episodeCount")}</div>
+		),
+		enableSorting: true,
+		enableHiding: true,
+		filterFn: (row, id, value) => {
+			return value.includes(row.getValue(id));
+		},
+	},
+];
 
 export const columns: ColumnDef<Task>[] = [
 	{

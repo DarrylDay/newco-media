@@ -18,7 +18,9 @@ export type MediaInfo = {
 };
 
 export type PodcastInfo = MediaInfo & {
-	length: number;
+	publisher: string;
+	category: string;
+	episodeCount: number;
 };
 
 export type NewsletterInfo = MediaInfo & {

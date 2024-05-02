@@ -1,12 +1,11 @@
-import { DataTable } from "@/components/DataTable";
-import Table from "@/components/dashboard/media/table/data-table-loaded";
+import MediaTable from "@/components/dashboard/media/MediaTable";
 import { CardTitle } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Page() {
 	return (
 		<main className="w-full flex flex-col">
-			<div className="h-[72px] gap-4 flex flex-row items-center">
+			<div className="h-[40px] flex flex-row gap-4 items-center">
 				<CardTitle>Media</CardTitle>
 			</div>
 			<div className="pt-2">
@@ -21,8 +20,7 @@ export default function Page() {
 				</Tabs>
 			</div>
 			<div className="pt-3">
-				{/* <DataTable /> */}
-				<Table />
+				<MediaTable />
 			</div>
 		</main>
 	);
