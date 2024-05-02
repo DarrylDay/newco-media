@@ -27,6 +27,14 @@ export const categories = [
 		value: "Business & Finance",
 		label: "Business & Finance",
 	},
+	{
+		value: "Health & Wellness",
+		label: "Health & Wellness",
+	},
+	{
+		value: "Entertainment & Media",
+		label: "Entertainment & Media",
+	},
 ];
 
 export function DataTableToolbar<TData>({

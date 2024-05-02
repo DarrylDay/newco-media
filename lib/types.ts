@@ -21,6 +21,18 @@ export type PodcastInfo = MediaInfo & {
 	publisher: string;
 	category: string;
 	episodeCount: number;
+	original: string;
+	adPricing: string;
+	adPositions: string;
+	numAdSlots: number;
+	episodeDay: string;
+	primaryCountry: string;
+	episodesPerWeek: number;
+	host: string;
+	genderDistribution: string;
+	avgHHI: string;
+	hosting: string;
+	platforms: string;
 };
 
 export type NewsletterInfo = MediaInfo & {
