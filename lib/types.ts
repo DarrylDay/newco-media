@@ -56,11 +56,28 @@ export type Vendor = {
 	bankInfo: BankInfo;
 };
 
+export type AdCheck = {
+	title: string;
+	date: string;
+	confirmed: boolean;
+	totalDownloads: number;
+};
+
 export type Campaign = {
-	name: string;
+	uid: string;
+	campaignName: string;
+	mediaName: string;
 	type: string;
 	date: string;
+	startDate: string;
+	endDate: string;
+	mediaBuys: number;
+	perUnitCost: number;
+	newCost: number;
+	contractLink: string;
 	leads: number;
 	cpm: number;
 	netCost: number;
+	alerts: number;
+	adChecks?: AdCheck[];
 };
