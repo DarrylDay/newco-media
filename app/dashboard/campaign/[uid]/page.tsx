@@ -35,7 +35,7 @@ export default function Page({ params }: { params: { uid: string } }) {
 					value={"$" + campagin?.perUnitCost.toLocaleString()}
 				/>
 				<TextDisplay
-					title="New Cost"
+					title="Net Cost"
 					value={"$" + campagin?.newCost.toLocaleString()}
 				/>
 				<TextDisplay
