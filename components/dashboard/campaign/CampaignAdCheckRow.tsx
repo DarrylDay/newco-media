@@ -14,9 +14,7 @@ export default function CampaignAdCheckRow({
 }) {
 	return (
 		<TableRow key={adCheck.title}>
-			<TableCell className="font-medium max-w-[300px]">
-				{adCheck.title}
-			</TableCell>
+			<TableCell className="font-medium">{adCheck.title}</TableCell>
 			<TableCell>{adCheck.date}</TableCell>
 			<TableCell className="hidden md:table-cell">
 				{adCheck.confirmed ? <Check /> : <X />}

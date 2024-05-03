@@ -17,32 +17,37 @@ export default function Page({ params }: { params: { uid: string } }) {
 					</p>
 				</div>
 				<Separator />
-				<TextDisplay title="Media Name" value={campagin?.mediaName} />
-				<TextDisplay
-					title="Campaign Start Date"
-					value={campagin?.startDate}
-				/>
-				<TextDisplay
-					title="Campaign End Date"
-					value={campagin?.endDate}
-				/>
-				<TextDisplay
-					title="Media Buys"
-					value={campagin?.mediaBuys.toString()}
-				/>
-				<TextDisplay
-					title="Per Unit Cost"
-					value={"$" + campagin?.perUnitCost.toLocaleString()}
-				/>
-				<TextDisplay
-					title="Net Cost"
-					value={"$" + campagin?.newCost.toLocaleString()}
-				/>
-				<TextDisplay
-					title="Contract Link"
-					value={campagin?.contractLink}
-					isLink={true}
-				/>
+				<div className="grid grid-cols-3 lg:grid-cols-4 gap-8">
+					<TextDisplay
+						title="Media Name"
+						value={campagin?.mediaName}
+					/>
+					<TextDisplay
+						title="Campaign Start Date"
+						value={campagin?.startDate}
+					/>
+					<TextDisplay
+						title="Campaign End Date"
+						value={campagin?.endDate}
+					/>
+					<TextDisplay
+						title="Media Buys"
+						value={campagin?.mediaBuys.toString()}
+					/>
+					<TextDisplay
+						title="Per Unit Cost"
+						value={"$" + campagin?.perUnitCost.toLocaleString()}
+					/>
+					<TextDisplay
+						title="Net Cost"
+						value={"$" + campagin?.newCost.toLocaleString()}
+					/>
+					<TextDisplay
+						title="Contract Link"
+						value={campagin?.contractLink}
+						isLink={true}
+					/>
+				</div>
 				<CampaignAdCheckTable campaign={campagin} />
 			</main>
 		</div>
