@@ -66,7 +66,13 @@ export function useDataTable<TData, TValue>({
 	});
 }
 
-export function DataTable<TData>({ table }: { table: TableData<TData> }) {
+export function DataTable<TData>({
+	table,
+	onRowClick,
+}: {
+	table: TableData<TData>;
+	onRowClick?: (id: string) => void;
+}) {
 	return (
 		<div className="rounded-md border">
 			<Table>
@@ -98,6 +104,10 @@ export function DataTable<TData>({ table }: { table: TableData<TData> }) {
 							<TableRow
 								key={row.id}
 								data-state={row.getIsSelected() && "selected"}
+								onClick={() => {
+									if (onRowClick)
+										onRowClick(row.getValue("name"));
+								}}
 							>
 								{row.getVisibleCells().map((cell) => (
 									<TableCell key={cell.id}>

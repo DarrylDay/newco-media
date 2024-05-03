@@ -6,7 +6,7 @@ export const vendors: Vendor[] = [
 		logoURL:
 			"https://assets-global.website-files.com/5dafa392fcdc196abf1f613a/65a719cc3ff184055b42a440_Quill%20Logo_Purple.png",
 		mediaTypes: ["Podcast"],
-		mediaCount: 100,
+		mediaCount: 14,
 		activeCampaigns: 2,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://www.quillpodcasting.com/",
@@ -334,109 +334,6 @@ export const campaigns: Campaign[] = [
 		alerts: 2,
 	},
 ];
-
-// export const campaignChartData = [
-// 	{
-// 		day: 1,
-// 		display: 0,
-// 		newsletter: 0,
-// 		creator: 0,
-// 		podcast: 0,
-// 	},
-// 	{
-// 		day: 2,
-// 		display: 3,
-// 		newsletter: 1,
-// 		creator: 0,
-// 		podcast: 4,
-// 	},
-// 	{
-// 		day: 3,
-// 		display: 8,
-// 		newsletter: 2,
-// 		creator: 20,
-// 		podcast: 6,
-// 	},
-// 	{
-// 		day: 4,
-// 		display: 10,
-// 		newsletter: 2,
-// 		creator: 42,
-// 		podcast: 15,
-// 	},
-// 	{
-// 		day: 5,
-// 		display: 13,
-// 		newsletter: 3,
-// 		creator: 67,
-// 		podcast: 19,
-// 	},
-// 	{
-// 		day: 6,
-// 		display: 13,
-// 		newsletter: 3,
-// 		creator: 71,
-// 		podcast: 21,
-// 	},
-// 	{
-// 		day: 7,
-// 		display: 17,
-// 		newsletter: 4,
-// 		creator: 81,
-// 		podcast: 24,
-// 	},
-// ];
-
-// export const campaignChartData = [
-// 	{
-// 		day: 1,
-// 		display: 0,
-// 		newsletter: 0,
-// 		creator: 0,
-// 		podcast: 0,
-// 	},
-// 	{
-// 		day: 31,
-// 		display: 17,
-// 		newsletter: 4,
-// 		creator: 81,
-// 		podcast: 24,
-// 	},
-// ];
-
-// export const campaignChartData = [
-// 	{ day: 1, display: 0, newsletter: 0, creator: 0, podcast: 0 },
-// 	{ day: 2, display: 3, newsletter: 1, creator: 0, podcast: 4 },
-// 	{ day: 3, display: 8, newsletter: 2, creator: 2, podcast: 6 },
-// 	{ day: 4, display: 12, newsletter: 4, creator: 4, podcast: 10 },
-// 	{ day: 5, display: 18, newsletter: 7, creator: 8, podcast: 15 },
-// 	{ day: 6, display: 25, newsletter: 11, creator: 13, podcast: 21 },
-// 	{ day: 7, display: 33, newsletter: 16, creator: 20, podcast: 28 },
-// 	{ day: 8, display: 42, newsletter: 22, creator: 29, podcast: 36 },
-// 	{ day: 9, display: 52, newsletter: 29, creator: 40, podcast: 45 },
-// 	{ day: 10, display: 63, newsletter: 37, creator: 55, podcast: 55 },
-// 	{ day: 11, display: 75, newsletter: 46, creator: 73, podcast: 66 },
-// 	{ day: 12, display: 88, newsletter: 56, creator: 95, podcast: 78 },
-// 	{ day: 13, display: 102, newsletter: 67, creator: 121, podcast: 91 },
-// 	{ day: 14, display: 117, newsletter: 79, creator: 153, podcast: 105 },
-// 	{ day: 15, display: 133, newsletter: 92, creator: 190, podcast: 120 },
-// 	{ day: 16, display: 150, newsletter: 106, creator: 232, podcast: 136 },
-// 	{ day: 17, display: 168, newsletter: 121, creator: 279, podcast: 153 },
-// 	{ day: 18, display: 187, newsletter: 137, creator: 332, podcast: 171 },
-// 	{ day: 19, display: 207, newsletter: 154, creator: 391, podcast: 190 },
-// 	{ day: 20, display: 228, newsletter: 172, creator: 457, podcast: 210 },
-// 	{ day: 21, display: 250, newsletter: 191, creator: 529, podcast: 231 },
-// 	{ day: 22, display: 273, newsletter: 211, creator: 609, podcast: 253 },
-// 	{ day: 23, display: 297, newsletter: 232, creator: 697, podcast: 276 },
-// 	{ day: 24, display: 322, newsletter: 254, creator: 794, podcast: 300 },
-// 	{ day: 25, display: 348, newsletter: 277, creator: 900, podcast: 325 },
-// 	{ day: 26, display: 375, newsletter: 301, creator: 1016, podcast: 351 },
-// 	{ day: 27, display: 403, newsletter: 326, creator: 1144, podcast: 378 },
-// 	{ day: 28, display: 432, newsletter: 352, creator: 1285, podcast: 406 },
-// 	{ day: 29, display: 462, newsletter: 379, creator: 1440, podcast: 435 },
-// 	{ day: 30, display: 493, newsletter: 407, creator: 1611, podcast: 465 },
-// 	{ day: 31, display: 525, newsletter: 436, creator: 1801, podcast: 496 },
-// ];
 
 export const campaignChartData = [
 	{ day: 1, display: 0, newsletter: 0, creator: 0, podcast: 0 },

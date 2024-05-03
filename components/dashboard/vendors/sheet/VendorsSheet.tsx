@@ -12,7 +12,7 @@ import TextDisplay from "@/components/TextDisplay";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
-export default function VendorsSheet({ vendor }: { vendor: Vendor }) {
+export default function VendorsSheet({ vendor }: { vendor?: Vendor }) {
 	return (
 		<SheetContent>
 			<SheetHeader className="flex flex-row space-x-4">
@@ -20,11 +20,11 @@ export default function VendorsSheet({ vendor }: { vendor: Vendor }) {
 					alt="Logo image"
 					className="aspect-square rounded-md object-contain"
 					height="64"
-					src={vendor.logoURL}
+					src={vendor?.logoURL ? vendor.logoURL : ""}
 					width="64"
 				/>
 				<SheetTitle className="text-4xl">
-					<div className="mt-1">{vendor.name}</div>
+					<div className="mt-1">{vendor?.name}</div>
 				</SheetTitle>
 			</SheetHeader>
 			<SheetDescription>
@@ -33,31 +33,31 @@ export default function VendorsSheet({ vendor }: { vendor: Vendor }) {
 					<div className="font-bold text-xl">Info</div>
 					<TextDisplay
 						title="Website"
-						value={vendor.website}
+						value={vendor?.website}
 						isLink={true}
 					/>
 					<TextDisplay
 						title="Active Campaigns"
-						value={vendor.activeCampaigns.toString()}
+						value={vendor?.activeCampaigns.toString()}
 					/>
 					<TextDisplay
 						title="Media Count"
-						value={vendor.mediaCount.toString()}
+						value={vendor?.mediaCount.toString()}
 					/>
 					<TextDisplay
 						title="Media Types"
-						value={vendor.mediaTypes.join(", ")}
+						value={vendor?.mediaTypes.join(", ")}
 					/>
 					<TextDisplay
 						title="Company Address"
-						value={vendor.address}
+						value={vendor?.address}
 					/>
 					<Separator />
 					<div className="font-bold text-xl">Contact</div>
-					<TextDisplay title="Name" value={vendor.contact.name} />
-					<TextDisplay title="Title" value={vendor.contact.title} />
-					<TextDisplay title="Email" value={vendor.contact.email} />
-					<TextDisplay title="Phone" value={vendor.contact.phone} />
+					<TextDisplay title="Name" value={vendor?.contact.name} />
+					<TextDisplay title="Title" value={vendor?.contact.title} />
+					<TextDisplay title="Email" value={vendor?.contact.email} />
+					<TextDisplay title="Phone" value={vendor?.contact.phone} />
 				</div>
 			</SheetDescription>
 		</SheetContent>
