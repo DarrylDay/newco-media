@@ -18,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 import { useState } from "react";
 
 const pages = [
@@ -54,9 +55,9 @@ export default function Page() {
 	return (
 		<main className="flex flex-col items-center p-24 w-scren h-screen bg-muted">
 			<Card className="w-full max-w-[1200px] h-full flex flex-row relative">
-				<div className="absolute right-0 -top-8">
+				<Link href={"/"} className="absolute right-0 -top-8">
 					<p>Powered by NewCo</p>
-				</div>
+				</Link>
 				<div className="flex flex-col gap-2 min-w-[400px] p-8 border-r-2">
 					{section == "business" ? (
 						<CardTitle className="text-4xl">
