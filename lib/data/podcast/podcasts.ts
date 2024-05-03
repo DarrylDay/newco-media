@@ -38,8 +38,9 @@ export async function getPodcasts() {
 		skip_empty_lines: true,
 	}) as PodcastInfo[];
 	podcasts.shift();
-	podcasts.forEach(
-		(x) => (x.adPricing = (x.adPricing as any).replace(/[^0-9.-]+/g, ""))
-	);
+	podcasts.forEach((x) => {
+		x.adPricing = (x.adPricing as any).replace(/[^0-9.-]+/g, "");
+		x.mediaType = "Podcast";
+	});
 	return podcasts;
 }

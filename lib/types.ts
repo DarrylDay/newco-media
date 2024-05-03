@@ -15,14 +15,15 @@ export type BankInfo = {
 
 export type MediaInfo = {
 	name: string;
+	mediaType: string;
+	publisher: string;
+	category: string;
+	adPricing: number;
 };
 
 export type PodcastInfo = MediaInfo & {
-	publisher: string;
-	category: string;
 	episodeCount: number;
 	original: string;
-	adPricing: number;
 	adPositions: string;
 	numAdSlots: number;
 	episodeDay: string;

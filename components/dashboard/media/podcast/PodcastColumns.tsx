@@ -1,7 +1,7 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { DataTableColumnHeader } from "../../common/table/DataTableColumnHeader";
+import { DataTableColumnHeader } from "../../../common/table/DataTableColumnHeader";
 import { PodcastInfo } from "@/lib/types";
 
 export const PodcastColumns: ColumnDef<PodcastInfo>[] = [

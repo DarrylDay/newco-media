@@ -1,6 +1,7 @@
-import { PodcastTable } from "@/components/dashboard/media/PodcastTable";
+import { AllMediaTable } from "@/components/dashboard/media/all/AllMediaTable";
+import { PodcastTable } from "@/components/dashboard/media/podcast/PodcastTable";
 import { CardTitle } from "@/components/ui/card";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getPodcasts } from "@/lib/data/podcast/podcasts";
 
 export default async function Page() {
@@ -20,10 +21,17 @@ export default async function Page() {
 						<TabsTrigger value="creator">Creator</TabsTrigger>
 						<TabsTrigger value="display">Display</TabsTrigger>
 					</TabsList>
+					<TabsContent value="all">
+						<div className="pt-1">
+							<AllMediaTable data={podcasts} />
+						</div>
+					</TabsContent>
+					<TabsContent value="podcast">
+						<div className="pt-1">
+							<PodcastTable data={podcasts} />
+						</div>
+					</TabsContent>
 				</Tabs>
-			</div>
-			<div className="pt-3">
-				<PodcastTable data={podcasts} />
 			</div>
 		</main>
 	);
