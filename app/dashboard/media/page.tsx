@@ -13,7 +13,7 @@ export default async function Page() {
 				<CardTitle>Media</CardTitle>
 			</div>
 			<div className="pt-2">
-				<Tabs defaultValue="podcast" className="">
+				<Tabs defaultValue="all" className="">
 					<TabsList>
 						<TabsTrigger value="all">All</TabsTrigger>
 						<TabsTrigger value="podcast">Podcast</TabsTrigger>

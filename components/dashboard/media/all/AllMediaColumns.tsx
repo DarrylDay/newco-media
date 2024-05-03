@@ -2,7 +2,7 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 import { DataTableColumnHeader } from "../../../common/table/DataTableColumnHeader";
-import { MediaInfo } from "@/lib/types";
+import { IntRange, MediaInfo } from "@/lib/types";
 
 export const PodcastColumns: ColumnDef<MediaInfo>[] = [
 	{
@@ -67,7 +67,9 @@ export const PodcastColumns: ColumnDef<MediaInfo>[] = [
 		enableSorting: true,
 		enableHiding: true,
 		filterFn: (row, id, value) => {
-			return value.includes(row.getValue(id));
+			const range = value as IntRange;
+			const rowValue = row.getValue(id) as number;
+			return range.min <= rowValue && rowValue <= range.max;
 		},
 	},
 ];

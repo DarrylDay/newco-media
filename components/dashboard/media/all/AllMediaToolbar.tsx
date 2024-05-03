@@ -8,6 +8,7 @@ import { DataTableViewOptions } from "../../../common/table/DataTableViewOptions
 import { DataTableFacetedFilter } from "../../../common/table/DataTableFacetedFilter";
 import DataTableSearchInput from "@/components/common/table/DataTableSearchInput";
 import { MediaInfo, PodcastInfo } from "@/lib/types";
+import DataTableRangeFilter from "@/components/common/table/DataTableRangeFilter";
 
 export function AllMediaToolbar({
 	table,
@@ -28,7 +29,9 @@ export function AllMediaToolbar({
 	const mediaTypes = getOptions(data.map((info) => info.mediaType));
 	const publishers = getOptions(data.map((info) => info.publisher));
 	const categories = getOptions(data.map((info) => info.category));
-	const isFiltered = table.getState().columnFilters.length > 0;
+	const isFiltered =
+		table.getState().columnFilters.filter((x) => x.id != "adPricing")
+			.length > 0;
 
 	return (
 		<div className="flex items-center justify-between">
@@ -59,13 +62,13 @@ export function AllMediaToolbar({
 						options={categories}
 					/>
 				)}
-				{/* {table.getColumn("primaryCountry") && (
-					<DataTableFacetedFilter
-						column={table.getColumn("primaryCountry")}
-						title="Country"
-						options={countries}
+				{table.getColumn("adPricing") && (
+					<DataTableRangeFilter
+						table={table}
+						accessorKey="adPricing"
+						label="Pricing"
 					/>
-				)} */}
+				)}
 				{isFiltered && (
 					<Button
 						variant="ghost"

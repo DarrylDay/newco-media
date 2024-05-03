@@ -1,3 +1,8 @@
+export type IntRange = {
+	min: number;
+	max: number;
+};
+
 export type Contact = {
 	name: string;
 	title?: string;
