@@ -22,7 +22,7 @@ export type PodcastInfo = MediaInfo & {
 	category: string;
 	episodeCount: number;
 	original: string;
-	adPricing: string;
+	adPricing: number;
 	adPositions: string;
 	numAdSlots: number;
 	episodeDay: string;
