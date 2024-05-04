@@ -3,6 +3,7 @@ import { PodcastTable } from "@/components/dashboard/media/podcast/PodcastTable"
 import { CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getPodcasts } from "@/lib/data/podcast/podcasts";
+import { Suspense } from "react";
 
 export default async function Page() {
 	const podcasts = await getPodcasts();
@@ -23,12 +24,16 @@ export default async function Page() {
 					</TabsList>
 					<TabsContent value="all">
 						<div className="pt-1">
-							<AllMediaTable data={podcasts} />
+							<Suspense>
+								<AllMediaTable data={podcasts} />
+							</Suspense>
 						</div>
 					</TabsContent>
 					<TabsContent value="podcast">
 						<div className="pt-1">
-							<PodcastTable data={podcasts} />
+							<Suspense>
+								<PodcastTable data={podcasts} />
+							</Suspense>
 						</div>
 					</TabsContent>
 				</Tabs>
