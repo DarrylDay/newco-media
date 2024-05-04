@@ -11,6 +11,7 @@ import {
 import TextDisplay from "@/components/TextDisplay";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function VendorsSheet({ vendor }: { vendor?: Vendor }) {
 	return (
@@ -29,7 +30,14 @@ export default function VendorsSheet({ vendor }: { vendor?: Vendor }) {
 			</SheetHeader>
 			<SheetDescription>
 				<div className="flex flex-col space-y-4 mt-4">
-					<Button>View Media Roster</Button>
+					<Link
+						href={
+							"/dashboard/media?publisher=" +
+							(vendor ? encodeURIComponent(vendor.name) : "")
+						}
+					>
+						<Button>View Media Roster</Button>
+					</Link>
 					<div className="font-bold text-xl">Info</div>
 					<TextDisplay
 						title="Website"
