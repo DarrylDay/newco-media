@@ -91,7 +91,7 @@ export function DataTable<TData>({
 													header.column.columnDef
 														.header,
 													header.getContext()
-											  )}
+												)}
 									</TableHead>
 								);
 							})}

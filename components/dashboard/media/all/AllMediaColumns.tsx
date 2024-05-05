@@ -17,6 +17,12 @@ export const PodcastColumns: ColumnDef<MediaInfo>[] = [
 		),
 		enableSorting: false,
 		enableHiding: false,
+		filterFn: (row, id, value) => {
+			const name = value instanceof Array ? value[0] : value;
+			return (row.getValue(id) as string)
+				.toLocaleUpperCase()
+				.includes(name.toLocaleUpperCase());
+		},
 	},
 	{
 		accessorKey: "mediaType",

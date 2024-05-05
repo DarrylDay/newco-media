@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { DataTableViewOptions } from "../../../common/table/DataTableViewOptions";
 import { DataTableFacetedFilter } from "../../../common/table/DataTableFacetedFilter";
 import DataTableSearchInput from "@/components/common/table/DataTableSearchInput";
-import { MediaInfo, PodcastInfo } from "@/lib/types";
+import { MediaInfo } from "@/lib/types";
 import DataTableRangeFilter from "@/components/common/table/DataTableRangeFilter";
 
 export function AllMediaToolbar({

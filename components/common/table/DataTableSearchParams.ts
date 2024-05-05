@@ -30,7 +30,7 @@ export function useFilterSearchParams<TData>(
 				if (param) {
 					table
 						.getColumn(aColumn.accessorKey)
-						?.setFilterValue([param]);
+						?.setFilterValue(param.split(","));
 				}
 			}
 		}
@@ -57,5 +57,5 @@ export function useFilterSearchParams<TData>(
 		} else {
 			router.push(pathname);
 		}
-	}, [tableState]);
+	}, [tableState.columnFilters]);
 }
