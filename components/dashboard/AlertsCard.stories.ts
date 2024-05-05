@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
-import BudgetCard from "./BudgetCard";
+import AlertsCard from "./AlertsCard";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-	title: "Dashboard/BudgetCard",
-	component: BudgetCard,
+	title: "Dashboard/AlertsCard",
+	component: AlertsCard,
 	parameters: {
 		// Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
 		layout: "centered",
@@ -18,7 +18,7 @@ const meta = {
 	// },
 	// // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
 	// args: { onClick: fn() },
-} satisfies Meta<typeof BudgetCard>;
+} satisfies Meta<typeof AlertsCard>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
