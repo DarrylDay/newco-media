@@ -18,6 +18,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -34,6 +35,7 @@ const pages = [
 		comps: (
 			<>
 				<ReceivableFormCell />
+				<BankFormCell />
 				<BankFormCell />
 			</>
 		),
@@ -53,11 +55,22 @@ export default function Page() {
 	);
 
 	return (
-		<main className="flex flex-col items-center p-24 w-scren h-screen bg-muted">
+		<main className="flex flex-col items-center px-24 pb-24 pt-36 w-scren h-screen bg-blue-600">
 			<Card className="w-full max-w-[1200px] h-full flex flex-row relative">
-				<Link href={"/"} className="absolute right-0 -top-8">
-					<p>Powered by NewCo</p>
-				</Link>
+				<div className="absolute -top-24 left-0 flex flex-row w-full max-w-[1200px] items-center">
+					<Image
+						alt="logo"
+						width={200}
+						height={20}
+						src={
+							"https://lcmediaagency.com/wp-content/uploads/2023/06/cropped-Cream_without_01-1.png"
+						}
+					/>
+					<div className="grow"></div>
+					<Link href={"/"} className="text-white text-xl">
+						Powered by <span className="font-bold">NewCo</span>
+					</Link>
+				</div>
 				<div className="flex flex-col gap-2 min-w-[400px] p-8 border-r-2">
 					{section == "business" ? (
 						<CardTitle className="text-4xl">
@@ -84,14 +97,14 @@ export default function Page() {
 				<div className="flex-grow rounded-r-lg bg-muted/40">
 					<div className="flex flex-col h-full">
 						<ScrollArea className="h-full px-4">
-							<div className="flex flex-col mt-4 space-y-8 p-4">
+							<div className="flex flex-col mt-4 p-4 gap-4">
 								{/* <PersonalFormCell />
 								<VendorFormCell /> */}
 								{section == "business"
 									? pages[0].comps
 									: section == "bank"
-									? pages[1].comps
-									: pages[2].comps}
+										? pages[1].comps
+										: pages[2].comps}
 							</div>
 							<ScrollBar orientation="vertical" />
 						</ScrollArea>
