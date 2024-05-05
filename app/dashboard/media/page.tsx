@@ -1,12 +1,17 @@
 import { AllMediaTable } from "@/components/dashboard/media/all/AllMediaTable";
+import { NewsletterTable } from "@/components/dashboard/media/newsletter/NewsletterTable";
 import { PodcastTable } from "@/components/dashboard/media/podcast/PodcastTable";
 import { CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { getNewsletters } from "@/lib/data/newsletter/newsletters";
 import { getPodcasts } from "@/lib/data/podcast/podcasts";
+import { MediaInfo } from "@/lib/types";
 import { Suspense } from "react";
 
 export default async function Page() {
 	const podcasts = await getPodcasts();
+	const newsletters = await getNewsletters();
+	const allMedia = (podcasts as MediaInfo[]).concat(newsletters);
 
 	return (
 		<main className="w-full flex flex-col">
@@ -25,7 +30,7 @@ export default async function Page() {
 					<TabsContent value="all">
 						<div className="pt-1">
 							<Suspense>
-								<AllMediaTable data={podcasts} />
+								<AllMediaTable data={allMedia} />
 							</Suspense>
 						</div>
 					</TabsContent>
@@ -33,6 +38,13 @@ export default async function Page() {
 						<div className="pt-1">
 							<Suspense>
 								<PodcastTable data={podcasts} />
+							</Suspense>
+						</div>
+					</TabsContent>
+					<TabsContent value="newsletter">
+						<div className="pt-1">
+							<Suspense>
+								<NewsletterTable data={newsletters} />
 							</Suspense>
 						</div>
 					</TabsContent>

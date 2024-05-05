@@ -2,13 +2,13 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 import { DataTableColumnHeader } from "../../../common/table/DataTableColumnHeader";
-import { IntRange, MediaInfo } from "@/lib/types";
+import { IntRange, NewsletterInfo } from "@/lib/types";
 
-export const PodcastColumns: ColumnDef<MediaInfo>[] = [
+export const NewsletterColumns: ColumnDef<NewsletterInfo>[] = [
 	{
 		accessorKey: "name",
 		header: ({ column }) => (
-			<DataTableColumnHeader column={column} title="Media Name" />
+			<DataTableColumnHeader column={column} title="Newsletter Name" />
 		),
 		cell: ({ row }) => (
 			<div className="min-w-[200px] font-medium">
@@ -22,18 +22,6 @@ export const PodcastColumns: ColumnDef<MediaInfo>[] = [
 			return (row.getValue(id) as string)
 				.toLocaleUpperCase()
 				.includes(name.toLocaleUpperCase());
-		},
-	},
-	{
-		accessorKey: "mediaType",
-		header: ({ column }) => (
-			<DataTableColumnHeader column={column} title="Media Type" />
-		),
-		cell: ({ row }) => <div className="">{row.getValue("mediaType")}</div>,
-		enableSorting: true,
-		enableHiding: true,
-		filterFn: (row, id, value) => {
-			return value.includes(row.getValue(id));
 		},
 	},
 	{
@@ -76,6 +64,44 @@ export const PodcastColumns: ColumnDef<MediaInfo>[] = [
 			const range = value as IntRange;
 			const rowValue = row.getValue(id) as number;
 			return range.min <= rowValue && rowValue <= range.max;
+		},
+	},
+	{
+		accessorKey: "placement",
+		header: ({ column }) => (
+			<DataTableColumnHeader column={column} title="Placement" />
+		),
+		cell: ({ row }) => <div className="">{row.getValue("placement")}</div>,
+		enableSorting: true,
+		enableHiding: true,
+		filterFn: (row, id, value) => {
+			return value.includes(row.getValue(id));
+		},
+	},
+	{
+		accessorKey: "episodeDay",
+		header: ({ column }) => (
+			<DataTableColumnHeader column={column} title="Release Day" />
+		),
+		cell: ({ row }) => <div className="">{row.getValue("episodeDay")}</div>,
+		enableSorting: true,
+		enableHiding: true,
+		filterFn: (row, id, value) => {
+			return value.includes(row.getValue(id));
+		},
+	},
+	{
+		accessorKey: "primaryCountry",
+		header: ({ column }) => (
+			<DataTableColumnHeader column={column} title="Primary Country" />
+		),
+		cell: ({ row }) => (
+			<div className="">{row.getValue("primaryCountry")}</div>
+		),
+		enableSorting: true,
+		enableHiding: true,
+		filterFn: (row, id, value) => {
+			return value.includes(row.getValue(id));
 		},
 	},
 ];

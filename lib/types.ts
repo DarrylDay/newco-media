@@ -43,6 +43,8 @@ export type PodcastInfo = MediaInfo & {
 
 export type NewsletterInfo = MediaInfo & {
 	placement: string;
+	episodeDay: string;
+	primaryCountry: string;
 };
 
 export type AdMedia = {

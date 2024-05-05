@@ -15,7 +15,7 @@ export const PodcastColumns: ColumnDef<PodcastInfo>[] = [
 				{row.getValue("name")}
 			</div>
 		),
-		enableSorting: false,
+		enableSorting: true,
 		enableHiding: false,
 		filterFn: (row, id, value) => {
 			const name = value instanceof Array ? value[0] : value;

@@ -23,6 +23,10 @@ export function useFilterSearchParams<TData>(
 	);
 
 	React.useEffect(() => {
+		table.getColumn("name")?.toggleSorting(false);
+	}, []);
+
+	React.useEffect(() => {
 		for (const column of columns) {
 			const aColumn = column as any;
 			if (aColumn.accessorKey) {
