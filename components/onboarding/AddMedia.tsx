@@ -36,7 +36,7 @@ export function AddMedia({
 				>
 					Podcast
 				</DropdownMenuItem>
-				<DropdownMenuItem>News Letter</DropdownMenuItem>
+				<DropdownMenuItem>Newsletter</DropdownMenuItem>
 				<DropdownMenuItem>YouTube</DropdownMenuItem>
 				<DropdownMenuItem>Radio</DropdownMenuItem>
 				<DropdownMenuItem>TV</DropdownMenuItem>

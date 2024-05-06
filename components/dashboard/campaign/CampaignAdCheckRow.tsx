@@ -14,10 +14,16 @@ export default function CampaignAdCheckRow({
 }) {
 	return (
 		<TableRow key={adCheck.title}>
-			<TableCell className="font-medium">{adCheck.title}</TableCell>
+			<TableCell className="font-medium max-w-[400px]">
+				<div className="truncate text-ellipsis">{adCheck.title}</div>
+			</TableCell>
 			<TableCell>{adCheck.date}</TableCell>
 			<TableCell className="hidden md:table-cell">
-				{adCheck.confirmed ? <Check /> : <X />}
+				{adCheck.confirmed ? (
+					<Check className=" stroke-green-600" />
+				) : (
+					<X className="stroke-red-600" />
+				)}
 			</TableCell>
 			<TableCell className="hidden md:table-cell">
 				{adCheck.totalDownloads.toLocaleString()}

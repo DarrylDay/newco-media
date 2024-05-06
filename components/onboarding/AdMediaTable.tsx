@@ -53,7 +53,7 @@ export default function AdMediaTable({
 						</TableRow>
 						<TableRow>
 							<TableCell className="font-medium">
-								News Letter
+								Newsletter
 							</TableCell>
 							<TableCell>Morning Brew</TableCell>
 							<TableCell className="text-right">$23</TableCell>
