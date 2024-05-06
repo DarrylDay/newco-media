@@ -49,14 +49,14 @@ export default function AdMediaTable({
 								Podcast
 							</TableCell>
 							<TableCell>Request for Startups</TableCell>
-							<TableCell className="text-right">54</TableCell>
+							<TableCell className="text-right">$54</TableCell>
 						</TableRow>
 						<TableRow>
 							<TableCell className="font-medium">
 								News Letter
 							</TableCell>
 							<TableCell>Morning Brew</TableCell>
-							<TableCell className="text-right">23</TableCell>
+							<TableCell className="text-right">$23</TableCell>
 						</TableRow>
 					</TableBody>
 				</Table>

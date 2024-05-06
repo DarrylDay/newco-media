@@ -1,3 +1,8 @@
+export type FormPageInfo = {
+	title: string;
+	pathname: string;
+};
+
 export type IntRange = {
 	min: number;
 	max: number;

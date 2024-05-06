@@ -2,10 +2,14 @@
 const nextConfig = {
 	async redirects() {
 		return [
-			// Basic redirect
 			{
 				source: "/",
 				destination: "/dashboard",
+				permanent: false,
+			},
+			{
+				source: "/onboarding",
+				destination: "/onboarding/business",
 				permanent: false,
 			},
 		];
