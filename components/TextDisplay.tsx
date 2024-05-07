@@ -12,8 +12,8 @@ export default function TextDisplay({
 }) {
 	return (
 		<div>
-			<div className="font-medium">{title}</div>
-			<div className="text-sm text-muted-foreground">
+			<div className="header-text">{title}</div>
+			<div className="value-text">
 				{isLink ? (
 					<Link href={value ? value : ""} className="underline">
 						{value}

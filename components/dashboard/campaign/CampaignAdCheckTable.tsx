@@ -22,7 +22,7 @@ export default function CampaignAdCheckTable({
 			<Separator />
 			<Table>
 				<TableHeader>
-					<TableRow>
+					<TableRow className="header-text">
 						<TableHead className="min-w-[300px] w-[400px]">
 							TITLE
 						</TableHead>
@@ -33,7 +33,7 @@ export default function CampaignAdCheckTable({
 						<TableHead className="">RECORDINGS</TableHead>
 					</TableRow>
 				</TableHeader>
-				<TableBody>
+				<TableBody className="value-text">
 					{campaign?.adChecks &&
 						campaign.adChecks.map((x) => (
 							<CampaignAdCheckRow

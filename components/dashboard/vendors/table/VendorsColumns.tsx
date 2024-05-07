@@ -30,9 +30,7 @@ export const VendorColumns: ColumnDef<Vendor>[] = [
 			<DataTableColumnHeader column={column} title="Vendor Name" />
 		),
 		cell: ({ row }) => (
-			<div className="min-w-[200px] font-medium">
-				{row.getValue("name")}
-			</div>
+			<div className="min-w-[200px]">{row.getValue("name")}</div>
 		),
 		enableSorting: false,
 		enableHiding: false,

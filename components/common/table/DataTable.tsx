@@ -78,7 +78,7 @@ export function DataTable<TData>({
 			<Table>
 				<TableHeader>
 					{table.getHeaderGroups().map((headerGroup) => (
-						<TableRow key={headerGroup.id}>
+						<TableRow key={headerGroup.id} className="header-text">
 							{headerGroup.headers.map((header) => {
 								return (
 									<TableHead
@@ -108,6 +108,7 @@ export function DataTable<TData>({
 									if (onRowClick)
 										onRowClick(row.getValue("name"));
 								}}
+								className="value-text"
 							>
 								{row.getVisibleCells().map((cell) => (
 									<TableCell

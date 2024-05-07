@@ -20,22 +20,22 @@ export default function CampaignTable() {
 			<Table>
 				<TableHeader>
 					<TableRow>
-						<TableHead>CAMPAIGN</TableHead>
-						<TableHead>TYPE</TableHead>
+						<TableHead>Campaign</TableHead>
+						<TableHead>Type</TableHead>
 						<TableHead className="hidden md:table-cell">
-							DATE
+							Date
 						</TableHead>
 						<TableHead className="hidden md:table-cell">
-							ALERTS
+							Alerts
 						</TableHead>
 						<TableHead className="hidden md:table-cell">
-							LEADS
+							Leads
 						</TableHead>
 						<TableHead className="hidden md:table-cell">
 							CPM
 						</TableHead>
 						<TableHead className="hidden md:table-cell">
-							NET COST
+							Net Cost
 						</TableHead>
 					</TableRow>
 				</TableHeader>

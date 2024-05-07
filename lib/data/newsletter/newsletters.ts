@@ -28,5 +28,6 @@ export async function getNewsletters() {
 		x.adPricing = (x.adPricing as any).replace(/[^0-9.-]+/g, "");
 		x.mediaType = "Newsletter";
 	});
-	return podcasts;
+	const names = podcasts.map((x) => x.name);
+	return podcasts.filter((x, i, a) => names.indexOf(x.name) == i);
 }

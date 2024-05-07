@@ -57,3 +57,12 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @layer components {
+    .header-text {
+        @apply text-sm text-muted-foreground uppercase
+    }
+    .value-text {
+        @apply text-base text-foreground font-medium
+    }
+  }
