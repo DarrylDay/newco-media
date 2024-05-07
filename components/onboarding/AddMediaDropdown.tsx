@@ -13,14 +13,13 @@ import {
 	DropdownMenuTrigger,
 	DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+import { useRouter } from "next/navigation";
 
 type Checked = DropdownMenuCheckboxItemProps["checked"];
 
-export function AddMedia({
-	setAddMedia,
-}: {
-	setAddMedia: (media: string) => void;
-}) {
+export function AddMediaDropdown() {
+	const router = useRouter();
+
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
@@ -31,7 +30,7 @@ export function AddMedia({
 				<DropdownMenuSeparator /> */}
 				<DropdownMenuItem
 					onClick={() => {
-						setAddMedia("Podcast");
+						router.push("media/add/podcast");
 					}}
 				>
 					Podcast

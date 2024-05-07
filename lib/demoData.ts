@@ -1,4 +1,27 @@
-import { Campaign, Vendor } from "./types";
+import { Campaign, FormPageInfo, Vendor } from "./types";
+
+export const formPages: FormPageInfo[] = [
+	{
+		title: "Business Details",
+		pathname: "/onboarding/business",
+	},
+	{
+		title: "Bank Information",
+		pathname: "/onboarding/bank",
+	},
+	{
+		title: "Ad Media Roster",
+		pathname: "/onboarding/media",
+	},
+	{
+		title: "Additional Info",
+		pathname: "/onboarding/additional",
+	},
+	{
+		title: "Review & Submit",
+		pathname: "/onboarding/review",
+	},
+];
 
 export const vendors: Vendor[] = [
 	{

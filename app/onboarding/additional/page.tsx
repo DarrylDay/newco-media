@@ -1,4 +1,5 @@
 import AdMediaPage from "@/components/onboarding/AdMediaPage";
+import ContentLayout from "@/components/onboarding/ContentLayout";
 import {
 	Card,
 	CardContent,
@@ -13,7 +14,7 @@ import React from "react";
 
 export default function page() {
 	return (
-		<>
+		<ContentLayout>
 			<Card className="overflow-hidden">
 				<CardHeader>
 					<CardTitle>Additional Info</CardTitle>
@@ -38,6 +39,6 @@ export default function page() {
 					</div>
 				</CardContent>
 			</Card>
-		</>
+		</ContentLayout>
 	);
 }

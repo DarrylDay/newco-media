@@ -1,41 +1,20 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
-import { FormPageInfo } from "@/lib/types";
+import { usePathname } from "next/navigation";
+import { formPages } from "@/lib/demoData";
 import FormTitle from "@/components/onboarding/FormTitle";
 import { Copy } from "lucide-react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
 	const pathname = usePathname();
-	const router = useRouter();
-	const formPages: FormPageInfo[] = [
-		{
-			title: "Business Details",
-			pathname: "/onboarding/business",
-		},
-		{
-			title: "Bank Information",
-			pathname: "/onboarding/bank",
-		},
-		{
-			title: "Ad Media Roster",
-			pathname: "/onboarding/ad",
-		},
-		{
-			title: "Additional Info",
-			pathname: "/onboarding/additional",
-		},
-		{
-			title: "Review & Submit",
-			pathname: "/onboarding/review",
-		},
-	];
-	const currentPageIndex = formPages.findIndex((x) => x.pathname == pathname);
+
+	const currentPageIndex = formPages.findIndex((x) =>
+		pathname.includes(x.pathname)
+	);
 
 	return (
 		<>
@@ -105,34 +84,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 						</Card>
 					</div>
 					<div className="flex-grow rounded-r-lg bg-muted/40">
-						<div className="flex flex-col h-full">
-							<ScrollArea className="h-full px-4">
-								<div className="flex flex-col mt-4 p-4 gap-4">
-									{children}
-								</div>
-								<ScrollBar orientation="vertical" />
-							</ScrollArea>
-							<div
-								className="min-h-[80px] bg-white border-t-2 rounded-br-lg flex items-center justify-end px-4"
-								onClick={() => {
-									const index =
-										formPages.findIndex(
-											(x) => x.pathname == pathname
-										) + 1;
-									const newPage =
-										index < formPages.length
-											? formPages[index]
-											: formPages[0];
-									router.push(newPage.pathname);
-								}}
-							>
-								<Button>
-									{currentPageIndex == formPages.length - 1
-										? "Submit"
-										: "Save & Continue"}
-								</Button>
-							</div>
-						</div>
+						<div className="flex flex-col h-full">{children}</div>
 					</div>
 				</Card>
 			</main>

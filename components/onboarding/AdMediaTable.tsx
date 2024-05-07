@@ -10,21 +10,17 @@ import {
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
-import { AddMedia } from "@/components/onboarding/AddMedia";
+import { AddMediaDropdown } from "@/components/onboarding/AddMediaDropdown";
 import { Button } from "../ui/button";
 
-export default function AdMediaTable({
-	setAddMedia,
-}: {
-	setAddMedia: (media: string) => void;
-}) {
+export default function AdMediaTable() {
 	return (
 		<Card className="overflow-hidden">
 			<CardHeader>
 				<CardTitle className="relative mb-4">
 					<div>Media List</div>
 					<div className="absolute right-0 top-0">
-						<AddMedia setAddMedia={setAddMedia} />
+						<AddMediaDropdown />
 					</div>
 					<div className="absolute right-[75px] top-0">
 						<Button variant="outline">Upload CSV</Button>

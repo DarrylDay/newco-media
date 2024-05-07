@@ -1,6 +1,7 @@
 export type FormPageInfo = {
 	title: string;
 	pathname: string;
+	buttonLayout?: React.ReactNode;
 };
 
 export type IntRange = {
