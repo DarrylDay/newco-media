@@ -29,7 +29,7 @@ export const vendors: Vendor[] = [
 		logoURL:
 			"https://wondery.com/wp-content/uploads/2024/02/Large_Wondery.svg",
 		mediaTypes: ["Podcast"],
-		mediaCount: 65,
+		mediaCount: 12,
 		activeCampaigns: 1,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://wondery.com/",
@@ -52,7 +52,7 @@ export const vendors: Vendor[] = [
 		logoURL:
 			"https://bloximages.newyork1.vip.townnews.com/podcastnewsdaily.com/content/tncms/assets/v3/editorial/8/72/87289680-379e-11ee-ad74-d3d3a2eb4657/64d5164580cac.image.jpg?resize=265%2C265",
 		mediaTypes: ["Podcast"],
-		mediaCount: 239,
+		mediaCount: 9,
 		activeCampaigns: 0,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://www.podcastone.com/",
@@ -74,7 +74,7 @@ export const vendors: Vendor[] = [
 		name: "Gimlet Media",
 		logoURL: "https://gimletmedia.com/images/gimlet-underline-logo.svg",
 		mediaTypes: ["Podcast"],
-		mediaCount: 121,
+		mediaCount: 7,
 		activeCampaigns: 0,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://gimletmedia.com/",
@@ -97,7 +97,7 @@ export const vendors: Vendor[] = [
 		logoURL:
 			"data:image/png;base64,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",
 		mediaTypes: ["Podcast"],
-		mediaCount: 33,
+		mediaCount: 15,
 		activeCampaigns: 0,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://www.prx.org/",
@@ -120,7 +120,7 @@ export const vendors: Vendor[] = [
 		logoURL:
 			"https://www.morningbrew.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fbl383u0v%2Fproduction%2F916095b68ced82700c6919434df9f1bebc82f4f8-500x87.png&w=3840&q=75",
 		mediaTypes: ["Newsletter"],
-		mediaCount: 10,
+		mediaCount: 4,
 		activeCampaigns: 0,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://www.morningbrew.com/daily",
@@ -143,7 +143,7 @@ export const vendors: Vendor[] = [
 		logoURL:
 			"https://20627419.fs1.hubspotusercontent-na1.net/hubfs/20627419/The%20Hustle/Logos/HubSpot%20%7C%20The%20Hustle.svg",
 		mediaTypes: ["Newsletter"],
-		mediaCount: 1,
+		mediaCount: 3,
 		activeCampaigns: 0,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://thehustle.co/",
@@ -166,7 +166,7 @@ export const vendors: Vendor[] = [
 		logoURL:
 			"https://pentagram-production.imgix.net/f2c6a01c-4857-4b9a-af3c-e880b019ebd0/NJ_theSkimm_2.png?crop=edges&fit=crop&h=630&rect=0%2C119%2C2000%2C1249&w=1200",
 		mediaTypes: ["Newsletter"],
-		mediaCount: 1,
+		mediaCount: 3,
 		activeCampaigns: 0,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://www.theskimm.com/",
@@ -189,7 +189,7 @@ export const vendors: Vendor[] = [
 		logoURL:
 			"https://nextdraft.com/wp-content/themes/nextdraft-refresh/images/refresh/header-logo.svg",
 		mediaTypes: ["Newsletter"],
-		mediaCount: 1,
+		mediaCount: 3,
 		activeCampaigns: 0,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://nextdraft.com/",
@@ -211,8 +211,8 @@ export const vendors: Vendor[] = [
 		name: "The New York Times",
 		logoURL:
 			"https://theme.zdassets.com/theme_assets/968999/d8a347b41db1ddee634e2d67d08798c102ef09ac.jpg",
-		mediaTypes: ["Newsletter", "Print"],
-		mediaCount: 2,
+		mediaTypes: ["Newsletter"],
+		mediaCount: 3,
 		activeCampaigns: 0,
 		address: "300 4th St, San Francisco, CA 94107",
 		website: "https://www.nytimes.com/",

@@ -1,13 +1,13 @@
 Newsletter Name,Publisher,Category,Ad Pricing,Placement,Primary Country,Release Day
-Tech Insider,Tech Media Co.,Technology,$500,Top,USA,Monday
+Tech Insider,Morning Brew,Technology,$500,Top,USA,Monday
 Health Matters,Health Media Group,Health & Wellness,$300,Middle,USA,Tuesday
 Finance Digest,Finance Media Inc.,Finance,$700,Bottom,USA,Wednesday
-Travel Gazette,Travel Media Group,Travel & Leisure,$400,Middle,UK,Thursday
+Travel Gazette,The New York Times,Travel & Leisure,$400,Middle,UK,Thursday
 Foodie Times,Food Media LLC,Food & Cooking,$250,Top,USA,Friday
 Fashion Weekly,Fashion Media Co.,Fashion & Beauty,$600,Top,France,Monday
-Sports Spectator,Sports Media Inc.,Sports,$450,Middle,USA,Tuesday
-Business Beat,Business Media Group,Business & Finance,$800,Bottom,USA,Wednesday
-Science World,Science Media LLC,Science & Nature,$350,Middle,Canada,Thursday
+Sports Spectator,The Skimm,Sports,$450,Middle,USA,Tuesday
+Business Beat,The Hustle,Business & Finance,$800,Bottom,USA,Wednesday
+Science World,NextDraft,Science & Nature,$350,Middle,Canada,Thursday
 Home & Garden Guide,Home Media Co.,Home & Garden,$200,Bottom,USA,Friday
 Parenting Prodigy,Parenting Media Group,Parenting,$550,Top,USA,Monday
 Artistry Times,Art Media Inc.,Art & Culture,$400,Middle,USA,Tuesday
@@ -19,15 +19,15 @@ Gamer's Gazette,Gaming Media Inc.,Gaming,$500,Bottom,USA,Tuesday
 Film Fanatic,Film Media Group,Film & TV,$700,Middle,USA,Wednesday
 Wellness Weekly,Wellness Media LLC,Health & Wellness,$350,Top,USA,Thursday
 Political Pulse,Politics Media Co.,Politics & Government,$450,Bottom,USA,Friday
-Tech Trends,Tech Media Co.,Technology,$550,Middle,USA,Monday
+Tech Trends,Morning Brew,Technology,$550,Middle,USA,Monday
 Nutrition Now,Nutrition Media Group,Nutrition & Dieting,$350,Bottom,USA,Tuesday
 Market Watch,Finance Media Inc.,Finance,$750,Top,USA,Wednesday
-Wanderlust Weekly,Travel Media Group,Travel & Leisure,$300,Middle,UK,Thursday
+Wanderlust Weekly,The New York Times,Travel & Leisure,$300,Middle,UK,Thursday
 Culinary Chronicles,Food Media LLC,Food & Cooking,$200,Top,USA,Friday
 Style Spotlight,Fashion Media Co.,Fashion & Beauty,$650,Top,France,Monday
-Game Time,Sports Media Inc.,Sports,$400,Middle,USA,Tuesday
-Economic Insights,Business Media Group,Business & Finance,$850,Bottom,USA,Wednesday
-Nature Notes,Science Media LLC,Science & Nature,$400,Middle,Canada,Thursday
+Game Time,The Skimm,Sports,$400,Middle,USA,Tuesday
+Economic Insights,The Hustle,Business & Finance,$850,Bottom,USA,Wednesday
+Nature Notes,NextDraft,Science & Nature,$400,Middle,Canada,Thursday
 Interior Ideas,Home Media Co.,Home & Garden,$250,Bottom,USA,Friday
 Family Focus,Parenting Media Group,Parenting,$600,Top,USA,Monday
 Artistic Endeavors,Art Media Inc.,Art & Culture,$450,Middle,USA,Tuesday
@@ -39,15 +39,15 @@ Gamer's Guide,Gaming Media Inc.,Gaming,$550,Bottom,USA,Tuesday
 Movie Magic,Film Media Group,Film & TV,$750,Middle,USA,Wednesday
 Healthy Habits,Wellness Media LLC,Health & Wellness,$400,Top,USA,Thursday
 Policy Perspectives,Politics Media Co.,Politics & Government,$500,Bottom,USA,Friday
-Code Crunch,Tech Media Co.,Technology,$600,Middle,USA,Monday
+Code Crunch,Morning Brew,Technology,$600,Middle,USA,Monday
 Wellness Watch,Nutrition Media Group,Nutrition & Dieting,$400,Bottom,USA,Tuesday
 Investor's Insight,Finance Media Inc.,Finance,$800,Top,USA,Wednesday
-Global Getaways,Travel Media Group,Travel & Leisure,$350,Middle,UK,Thursday
+Global Getaways,The New York Times,Travel & Leisure,$350,Middle,UK,Thursday
 Gourmet Gazette,Food Media LLC,Food & Cooking,$250,Top,USA,Friday
 Fashion Fix,Fashion Media Co.,Fashion & Beauty,$700,Top,France,Monday
-Sports Zone,Sports Media Inc.,Sports,$450,Middle,USA,Tuesday
-Market Matters,Business Media Group,Business & Finance,$900,Bottom,USA,Wednesday
-Science Spotlight,Science Media LLC,Science & Nature,$450,Middle,Canada,Thursday
+Sports Zone,The Skimm,Sports,$450,Middle,USA,Tuesday
+Market Matters,The Hustle,Business & Finance,$900,Bottom,USA,Wednesday
+Science Spotlight,NextDraft,Science & Nature,$450,Middle,Canada,Thursday
 Homemaker's Helper,Home Media Co.,Home & Garden,$300,Bottom,USA,Friday
 Parenting Perspectives,Parenting Media Group,Parenting,$650,Top,USA,Monday
 Artisanal Gazette,Art Media Inc.,Art & Culture,$500,Middle,USA,Tuesday
@@ -59,15 +59,15 @@ Gaming Guru,Gaming Media Inc.,Gaming,$600,Bottom,USA,Tuesday
 Cinema Scope,Film Media Group,Film & TV,$800,Middle,USA,Wednesday
 Healthy Living,Wellness Media LLC,Health & Wellness,$450,Top,USA,Thursday
 Government Gazette,Politics Media Co.,Politics & Government,$550,Bottom,USA,Friday
-Digital Digest,Tech Media Co.,Technology,$650,Middle,USA,Monday
+Digital Digest,Morning Brew,Technology,$650,Middle,USA,Monday
 Nutrition News,Nutrition Media Group,Nutrition & Dieting,$450,Bottom,USA,Tuesday
 Market Matters,Finance Media Inc.,Finance,$850,Top,USA,Wednesday
-Wanderlust Weekly,Travel Media Group,Travel & Leisure,$400,Middle,UK,Thursday
+Wanderlust Weekly,The New York Times,Travel & Leisure,$400,Middle,UK,Thursday
 Culinary Chronicles,Food Media LLC,Food & Cooking,$300,Top,USA,Friday
 Style Spotlight,Fashion Media Co.,Fashion & Beauty,$700,Top,France,Monday
-Game Time,Sports Media Inc.,Sports,$500,Middle,USA,Tuesday
-Economic Insights,Business Media Group,Business & Finance,$950,Bottom,USA,Wednesday
-Nature Notes,Science Media LLC,Science & Nature,$500,Middle,Canada,Thursday
+Game Time,The Skimm,Sports,$500,Middle,USA,Tuesday
+Economic Insights,The Hustle,Business & Finance,$950,Bottom,USA,Wednesday
+Nature Notes,NextDraft,Science & Nature,$500,Middle,Canada,Thursday
 Interior Ideas,Home Media Co.,Home & Garden,$350,Bottom,USA,Friday
 Family Focus,Parenting Media Group,Parenting,$700,Top,USA,Monday
 Artistic Endeavors,Art Media Inc.,Art & Culture,$550,Middle,USA,Tuesday
@@ -79,15 +79,15 @@ Gamer's Guide,Gaming Media Inc.,Gaming,$650,Bottom,USA,Tuesday
 Movie Magic,Film Media Group,Film & TV,$850,Middle,USA,Wednesday
 Healthy Habits,Wellness Media LLC,Health & Wellness,$500,Top,USA,Thursday
 Policy Perspectives,Politics Media Co.,Politics & Government,$600,Bottom,USA,Friday
-Code Crunch,Tech Media Co.,Technology,$700,Middle,USA,Monday
+Code Crunch,Morning Brew,Technology,$700,Middle,USA,Monday
 Wellness Watch,Nutrition Media Group,Nutrition & Dieting,$500,Bottom,USA,Tuesday
 Investor's Insight,Finance Media Inc.,Finance,$900,Top,USA,Wednesday
-Global Getaways,Travel Media Group,Travel & Leisure,$450,Middle,UK,Thursday
+Global Getaways,The New York Times,Travel & Leisure,$450,Middle,UK,Thursday
 Gourmet Gazette,Food Media LLC,Food & Cooking,$350,Top,USA,Friday
 Fashion Fix,Fashion Media Co.,Fashion & Beauty,$750,Top,France,Monday
-Sports Zone,Sports Media Inc.,Sports,$500,Middle,USA,Tuesday
-Market Matters,Business Media Group,Business & Finance,$1000,Bottom,USA,Wednesday
-Science Spotlight,Science Media LLC,Science & Nature,$500,Middle,Canada,Thursday
+Sports Zone,The Skimm,Sports,$500,Middle,USA,Tuesday
+Market Matters,The Hustle,Business & Finance,$1000,Bottom,USA,Wednesday
+Science Spotlight,NextDraft,Science & Nature,$500,Middle,Canada,Thursday
 Homemaker's Helper,Home Media Co.,Home & Garden,$400,Bottom,USA,Friday
 Parenting Perspectives,Parenting Media Group,Parenting,$750,Top,USA,Monday
 Artisanal Gazette,Art Media Inc.,Art & Culture,$600,Middle,USA,Tuesday
