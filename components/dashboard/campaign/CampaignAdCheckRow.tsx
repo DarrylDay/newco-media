@@ -14,7 +14,7 @@ export default function CampaignAdCheckRow({
 }) {
 	return (
 		<TableRow key={adCheck.title}>
-			<TableCell className="font-medium max-w-[400px]">
+			<TableCell className="max-w-[400px]">
 				<div className="truncate text-ellipsis">{adCheck.title}</div>
 			</TableCell>
 			<TableCell>{adCheck.date}</TableCell>

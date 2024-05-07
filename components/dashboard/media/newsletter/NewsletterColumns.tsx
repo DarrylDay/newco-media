@@ -11,9 +11,7 @@ export const NewsletterColumns: ColumnDef<NewsletterInfo>[] = [
 			<DataTableColumnHeader column={column} title="Newsletter Name" />
 		),
 		cell: ({ row }) => (
-			<div className="min-w-[200px] font-medium">
-				{row.getValue("name")}
-			</div>
+			<div className="min-w-[200px]">{row.getValue("name")}</div>
 		),
 		enableSorting: true,
 		enableHiding: false,

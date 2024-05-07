@@ -108,7 +108,6 @@ export function DataTable<TData>({
 									if (onRowClick)
 										onRowClick(row.getValue("name"));
 								}}
-								className="value-text"
 							>
 								{row.getVisibleCells().map((cell) => (
 									<TableCell

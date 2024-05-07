@@ -33,7 +33,7 @@ export default function CampaignAdCheckTable({
 						<TableHead className="">RECORDINGS</TableHead>
 					</TableRow>
 				</TableHeader>
-				<TableBody className="value-text">
+				<TableBody className="">
 					{campaign?.adChecks &&
 						campaign.adChecks.map((x) => (
 							<CampaignAdCheckRow
