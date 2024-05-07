@@ -13,9 +13,7 @@ export default function CampaignTableRow({ campaign }: { campaign: Campaign }) {
 			key={campaign.uid}
 			onClick={() => router.push("/dashboard/campaign/" + campaign.uid)}
 		>
-			<TableCell className="font-medium">
-				{campaign.campaignName}
-			</TableCell>
+			<TableCell className="">{campaign.campaignName}</TableCell>
 			<TableCell>{campaign.type}</TableCell>
 			<TableCell className="hidden md:table-cell">
 				{campaign.date}
