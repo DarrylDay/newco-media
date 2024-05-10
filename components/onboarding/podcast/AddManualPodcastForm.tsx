@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { Label } from "../ui/label";
-import { Input } from "../ui/input";
-import { Combobox } from "../Combobox";
-import { Textarea } from "../ui/textarea";
+import { Card, CardContent, CardHeader, CardTitle } from "../../ui/card";
+import { Label } from "../../ui/label";
+import { Input } from "../../ui/input";
+import { Combobox } from "../../Combobox";
+import { Textarea } from "../../ui/textarea";
 
 const yesNoOptions = [
 	{

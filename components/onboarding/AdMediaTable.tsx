@@ -22,9 +22,9 @@ export default function AdMediaTable() {
 					<div className="absolute right-0 top-0">
 						<AddMediaDropdown />
 					</div>
-					<div className="absolute right-[75px] top-0">
+					{/* <div className="absolute right-[75px] top-0">
 						<Button variant="outline">Upload CSV</Button>
-					</div>
+					</div> */}
 				</CardTitle>
 			</CardHeader>
 			<CardContent>

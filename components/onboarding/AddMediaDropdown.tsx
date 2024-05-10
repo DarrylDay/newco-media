@@ -26,8 +26,6 @@ export function AddMediaDropdown() {
 				<Button variant="outline">Add</Button>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end" className="w-56">
-				{/* <DropdownMenuLabel>Appearance</DropdownMenuLabel>
-				<DropdownMenuSeparator /> */}
 				<DropdownMenuItem
 					onClick={() => {
 						router.push("media/add/podcast");

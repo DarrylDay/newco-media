@@ -52,6 +52,18 @@ const nextConfig = {
 				port: "",
 				pathname: "/**",
 			},
+			{
+				protocol: "https",
+				hostname: "images.crunchbase.com",
+				port: "",
+				pathname: "/**",
+			},
+			{
+				protocol: "https",
+				hostname: "d8g345wuhgd7e.cloudfront.net",
+				port: "",
+				pathname: "/**",
+			},
 		],
 	},
 };

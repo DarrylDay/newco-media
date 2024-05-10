@@ -1,4 +1,3 @@
-import AdMediaPage from "@/components/onboarding/AdMediaPage";
 import ContentLayout from "@/components/onboarding/ContentLayout";
 import {
 	Card,
