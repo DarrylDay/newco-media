@@ -96,7 +96,7 @@ export default function AddPodcastSimplecast() {
 					<TableBody>
 						{podcasts ? (
 							podcasts.map((x) => (
-								<TableRow>
+								<TableRow key={x.uuid}>
 									<TableCell>{x.name}</TableCell>
 									<TableCell className="text-right">
 										{x.downloads}
